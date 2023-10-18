@@ -1,0 +1,394 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Gilroy-Light, sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(fonts/Gilroy-Light.otf);
+}
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(fonts/Gilroy-ExtraBold.otf);
+}
+@font-face {
+    font-family: HomemadeApple;
+    src: url(fonts/HomemadeApple-Regular.ttf);
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 36px 0;
+}
+
+.logo {
+    font-family: HomemadeApple, sans-serif;
+    font-size: 18px;
+
+    color: #231F20;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-link {
+    margin-right: 31px;
+}
+
+.menu-link:last-child {
+    margin-right: 0;
+}
+
+.menu-link a {
+    text-decoration: none;
+    font-size: 18px;
+
+    color: black;
+}
+
+.menu-link a:hover {
+    border-bottom: 1px solid black;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 1px solid #F7941E;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    background-color: transparent;
+    color: #F7941E;
+}
+
+.start-screen {
+    width: 100%;
+
+    background-color: #F1F1F2;
+}
+
+.start-screen-block {
+    display: flex;
+}
+
+.start-screen-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.start-screen-img {
+    width: 50%;
+}
+
+.start-screen-img img{
+    width: 100%;
+}
+
+.info-block {
+    width: 360px;
+}
+
+.info-block-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+}
+
+.info-block-text {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 36px 0 52px 0;
+}
+
+.info-block-title-2 {
+    font-size: 32px;
+}
+
+.info-block-text-2 {
+    font-size: 20px;
+    width: 441px;
+    margin: 23px 0 35px 0;
+}
+
+.start-screen-info .btn {
+    padding: 15px 25px;
+}
+
+.btn-orange {
+    background-color: #F7941E;
+    color: white;
+}
+
+.gifts {
+    text-align: center;
+    padding: 96px 0 137px 0;
+}
+
+.gifts-title {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.gifts-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 23px 0 64px 0;
+}
+
+.gifts-cards {
+    display: flex;
+}
+
+.gifts-card {
+    /* display: flex;
+    flex-direction: column; */
+    width: 270px;
+    height: 436px;
+    /* background-color: gray; */
+    cursor: pointer;
+}
+
+.gifts-card:hover{
+    -webkit-box-shadow: -10px 8px 11px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: -10px 8px 11px -1px rgba(0, 0, 0, 0.35);
+    box-shadow: -10px 8px 11px -1px rgba(0, 0, 0, 0.35);
+}
+
+.gifts-card-text {
+    text-align: start;
+    padding: 24px;
+}
+
+.gifts-card-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 74px;
+}
+
+.gifts-card-btn {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+.gifts-card-btn:hover{
+    border-bottom: 1px solid black;
+}
+
+.bg-orange {
+    background-color: #F7941E;
+    padding: 81px 0 69px 0;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign-up-text div {
+    font-size: 32px;
+    line-height: 45px;
+}
+
+.sign-up-btn button{
+    border: 1px solid black;
+
+    color:white;
+    background-color: black;
+}
+
+.sign-up-btn button:hover{
+    color: black;
+    background-color: transparent;
+}
+
+.blog {
+    padding: 88px 0 80px 0;
+}
+
+.blog-title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.blog-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 23px 0 71px 0;
+}
+
+.black-block {
+    width: 100%;
+    display: flex;
+}
+
+.black-block-img img{
+    height: 100%;
+}
+
+.black-block-info {
+    flex-grow: 1;
+    padding: 63px 200px 49px 78px;
+
+    background-color: #231F20;
+}
+
+.black-block-text div:first-child {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+
+    color: white;
+}
+
+.black-block-text div {
+    font-size: 48px;
+    line-height: 57px;
+    margin: 27px 0 60px 0;
+
+    color: white;
+}
+
+.black-block-text a {
+    text-decoration: none;
+
+    color: white;
+}
+
+.black-block-text a:hover {
+    border-bottom: 1px solid white;
+}
+
+.blog-blocks {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.blog-block {
+    width: 570px;
+    height: 290px;
+    padding: 48px;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.blog-block:hover {
+    -webkit-box-shadow: 4px 4px 15px -9px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 4px 4px 15px -9px rgba(0, 0, 0, 0.38);
+    box-shadow: 4px 4px 15px -9px rgba(0, 0, 0, 0.38);
+}
+
+.blog-block-title {
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+.blog-block-text {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 16px 0;
+}
+
+.blog-block-info a {
+    text-decoration: none;
+
+    color: black;
+}
+
+.blog-block-info a:hover{
+    border-bottom: 1px solid black;
+}
+
+.footer {
+    /* padding: 106px 220px 35px 220px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 43px;
+}
+
+.footer-nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-nav-list li {
+    margin-right: 81px;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.footer-nav-list li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav-list a{
+    text-decoration: none;
+
+    color: black;
+}
+
+.footer-nav-list a:hover{
+    border-bottom: 1px solid black;
+}
+
+.footer-nav .logo {
+    color: #F7941E;
+    margin: 0 141px 0 141px;
+}
+
+.footer hr {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+}
+
+.networks {
+    padding: 55px 0 72px 0;
+}
+
+.networks a {
+    margin-right: 20px;
+}
+
+.networks a:last-child{
+    margin-right: 0;
+}
+
+.footer span {
+    font-size: 14px;
+}
