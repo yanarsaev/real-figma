@@ -4,8 +4,9 @@
     font-family: Gilroy-Light, sans-serif;
 }
 
+
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -155,7 +156,10 @@
 }
 
 .gifts-cards {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .gifts-card {
@@ -252,7 +256,8 @@
 
 .black-block-info {
     flex-grow: 1;
-    padding: 63px 200px 49px 78px;
+    width: 70%;
+    padding: 63px 0px 49px 78px;
 
     background-color: #231F20;
 }
@@ -269,6 +274,7 @@
     font-size: 48px;
     line-height: 57px;
     margin: 27px 0 60px 0;
+    width: 492px;
 
     color: white;
 }
@@ -375,10 +381,13 @@
     width: 80%;
     height: 1px;
     background-color: black;
+    border: none;
 }
 
 .networks {
     padding: 55px 0 72px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .networks a {
@@ -391,4 +400,208 @@
 
 .footer span {
     font-size: 14px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    margin-bottom: 2px;
+    background-color: black;
+}
+
+.burger div:last-child {
+    margin-bottom: 0;
+}
+
+/* 
+calc(моё знач + (знач по умолч - моё знач) * ((100vw - 320px) / (1200 - 320)))
+ */
+
+ @media(max-width:1440px) {
+    .info-block-text {
+        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .info-block-text-2 {
+        font-size: calc(12px + (20 - 14) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    .info-block-title {
+        font-size: calc(35px + (56 - 35) * ((100vw - 320px) / (1440 - 320)));
+        line-height: 55px;
+    }
+
+    .info-block-title-2 {
+        font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (1440 - 320)));
+    }
+ }
+
+ @media (max-width: 1045px) {
+    .info-block {
+        margin-left: 40px;
+    }
+
+    .gifts-cards {
+        justify-content: space-around;
+    }
+
+    .gifts-card {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .gifts-card:last-child {
+        margin-bottom: 0;
+    }
+ }
+
+@media(max-width:977px) {
+    .black-block-img {
+        display: none;
+    }
+
+    .start-screen-block:last-child > .start-screen-img {
+        display: none;
+    }
+
+
+    .info-block-adaptive {
+        padding: 30px 0;
+        margin: 0;
+        width: 441px;
+        text-align: center;
+    }
+}
+
+@media (max-width:767px) {
+    .gifts-cards {
+        justify-content: space-evenly;
+    }
+
+    .start-screen-img {
+        display: none;
+    }
+
+    .start-screen-block:first-child {
+        padding: 40px 0;
+    }
+
+    .start-screen-block:last-child {
+        background-color: white;
+    }
+
+    .info-block {
+        margin: auto;
+    }
+
+    .start-screen-info:last-child{
+        flex-direction: row;
+    }
+
+    .start-screen-info:first-child {
+        text-align: center;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    .bg-orange {
+        display: none;
+    }
+
+    .gifts {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width:600px) {
+    .header button {
+        display: none;
+    }
+
+    .logo {
+        flex-grow: 1;
+    }
+
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .blog-blocks {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .blog-block {
+        width: 90%;
+        margin: auto;
+    }
+
+    .first-info-block{
+        width: 100%;
+    }
+}
+
+@media(max-width:580px) {
+    .black-block-text div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .black-block-text div {
+        font-size: 24px;
+        margin: 17px 0 30px 0;
+    }
+
+    .info-block-text-2 {
+        width: calc(300px + (441 - 300) * ((100vw - 320px) / (1200 - 320)));
+    }
+}
+
+@media(max-width:475px) {
+    .black-block-info {
+        padding: 63px 0px 49px 49px;
+    }
+}
+
+@media(max-width:370px) {
+    .gifts-title {
+        font-size: 27px;
+    }
+
+    .gifts-text {
+        font-size: 15px;
+    }
+
+    .blog-block:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:300px) {
+    .blog-block:first-child{
+        margin-bottom: 130px;
+    }
+    .blog-block{
+        margin-bottom: 100px;
+    }
+
+    .networks {
+        display: none;
+    }
 }
